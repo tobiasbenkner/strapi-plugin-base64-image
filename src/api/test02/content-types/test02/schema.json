@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test02s",
+  "info": {
+    "singularName": "test02",
+    "pluralName": "test02s",
+    "displayName": "test02",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dyn": {
+      "type": "dynamiczone",
+      "components": [
+        "image.pictures"
+      ]
+    }
+  }
+}

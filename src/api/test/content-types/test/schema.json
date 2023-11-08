@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test": {
+      "type": "text",
+      "required": true
+    },
+    "zukurz": {
+      "type": "customField",
+      "options": {
+        "width": 500,
+        "height": 500
+      },
+      "customField": "plugin::strapi-plugin-base64-image.field"
+    },
+    "noch": {
+      "type": "customField",
+      "options": {
+        "width": 500,
+        "height": 500
+      },
+      "customField": "plugin::strapi-plugin-base64-image.field"
+    },
+    "dyn": {
+      "type": "dynamiczone",
+      "components": [
+        "image.pictures"
+      ]
+    }
+  }
+}

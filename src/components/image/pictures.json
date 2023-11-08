@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_image_pictures",
+  "info": {
+    "displayName": "pictures"
+  },
+  "options": {},
+  "attributes": {
+    "wonderful": {
+      "type": "customField",
+      "options": {
+        "width": 500,
+        "height": 500
+      },
+      "customField": "plugin::strapi-plugin-base64-image.field"
+    }
+  }
+}
