@@ -8,10 +8,7 @@
     "name": "A Strapi developer"
   },
   "scripts": {
-    "build": "strapi build",
     "build:plugin": "cd src/plugins/strapi-plugin-base64-image && npm run build",
-    "clean": "rimraf .cache dist",
-    "dev": "concurrently 'npm:dev*'",
     "dev:plugin": "cd src/plugins/strapi-plugin-base64-image && npm run develop",
     "dev:strapi": "strapi develop --watch-admin"
   },
@@ -31,7 +28,6 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
     "rimraf": "^5.0.5"
   },
   "engines": {
