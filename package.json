@@ -9,12 +9,11 @@
   },
   "scripts": {
     "build": "strapi build",
-    "build:plugin": "cd src/plugins/base64-image && npm run build",
+    "build:plugin": "cd src/plugins/strapi-plugin-base64-image && npm run build",
     "clean": "rimraf .cache dist",
-    "predevelop": "yarn clean",
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "strapi": "strapi"
+    "dev": "concurrently 'npm:dev*'",
+    "dev:plugin": "cd src/plugins/strapi-plugin-base64-image && npm run develop",
+    "dev:strapi": "strapi develop --watch-admin"
   },
   "dependencies": {
     "@strapi/design-system": "^1.13.0",
@@ -32,6 +31,7 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "rimraf": "^5.0.5"
   },
   "engines": {
