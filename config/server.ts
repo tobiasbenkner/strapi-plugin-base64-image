@@ -7,5 +7,4 @@ export default ({ env }) => ({
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
-  watchIgnoreFiles: ["strapi-plugin-base64-image/**"],
 });
