@@ -8,9 +8,12 @@
     "name": "A Strapi developer"
   },
   "scripts": {
+    "install": "npm i && cd src/plugins/strapi-plugin-base64-image && npm i",
     "build:plugin": "cd src/plugins/strapi-plugin-base64-image && npm run build",
     "dev:plugin": "cd src/plugins/strapi-plugin-base64-image && npm run develop",
-    "dev:strapi": "strapi develop --watch-admin"
+    "dev:strapi": "strapi develop --watch-admin",
+    "strapi": "strapi",
+    "publish": "cd src/plugins/strapi-plugin-base64-image && npm publish"
   },
   "dependencies": {
     "@strapi/design-system": "^1.13.0",
