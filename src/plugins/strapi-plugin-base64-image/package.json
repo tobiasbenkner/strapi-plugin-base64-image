@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-base64-image",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Upload images as base64 - custom field",
   "repository": {
     "type": "git",
