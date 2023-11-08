@@ -1,5 +1,6 @@
 types/generated
-./strapi-plugin-base64-image
+strapi-plugin-base64-image
+!src/plugins/strapi-plugin-base64-image
 
 ############################
 # OS X
