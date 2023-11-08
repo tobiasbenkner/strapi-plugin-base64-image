@@ -6,3 +6,8 @@ npm run dev:strapi
 ```
 
 http://localhost:8000/
+
+# Publish
+```
+npm run deploy
+```
