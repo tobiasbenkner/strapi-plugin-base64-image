@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-base64-image",
-  "version": "1.0.15",
+  "version": "1.0.20",
   "description": "Upload images as base64 - custom field",
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.server.json",
-    "develop": "tsc -p tsconfig.server.json -w"
+    "deploy": "npm run build && npm version patch && npm publish",
+    "develop": "tsc -p tsconfig.server.json -w",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "@strapi/design-system": "^1.6.3",
